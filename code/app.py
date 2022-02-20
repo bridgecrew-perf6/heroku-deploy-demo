@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -5,4 +7,4 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": f"Hello World! The time now is {datetime.now()}"}
