@@ -17,4 +17,4 @@ jobs:
           heroku_email: "${{ secrets.EMAIL_ADDRESS }}"
           usedocker: true
         env:
-            HD_TOKEN: ${{ secrets.TOKEN }}
+            HD_TOKEN: 123321
