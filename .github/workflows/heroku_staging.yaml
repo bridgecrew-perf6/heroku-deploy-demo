@@ -17,4 +17,5 @@ jobs:
           heroku_email: "${{ secrets.EMAIL_ADDRESS }}"
           usedocker: true
         env:
-            HD_TOKEN: 123321
+            HD_FIREBASE_API_KEY: ${{ secrets.TOKEN }}
+            HD_RANDOM_DATA: "Hello"
