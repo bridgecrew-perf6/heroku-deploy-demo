@@ -16,3 +16,7 @@ jobs:
           heroku_app_name: "covid-whatsapp-bot-il-staging"
           heroku_email: "${{ secrets.EMAIL_ADDRESS }}"
           usedocker: true
+          docker_build_args: |
+            TOKEN
+        env:
+            TOKEN: ${{ secrets.TOKEN }}
